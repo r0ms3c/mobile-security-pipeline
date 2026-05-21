@@ -1,0 +1,34 @@
+# Mobile Security Pipeline — .gitignore
+
+# MobSF scan outputs — never commit
+mobsf-report.json
+mobsf-report.pdf
+mobsf-scan.json
+mobile-security-report.html
+mobile-comment-body.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# APK files — never commit real APKs to the pipeline repo
+# (APKs belong in their own per-supplier repositories)
+*.apk
+*.aab
+
+# Secrets
+*.env
+.env*
+secrets.*
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
